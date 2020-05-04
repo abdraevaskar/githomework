@@ -1,0 +1,10 @@
+time1 = input('Enter the time1: ')
+b = time1.split(',')
+hour1, minute1, second1 = b
+time2 = input('Enter the time2: ')
+c = time2.split(',')
+hour2, minute2, second2 = c
+result1 = int(hour1) * 3600 + int(minute1) * 60 + int(second1)
+result2 = int(hour2) * 3600 + int(minute2) * 60 + int(second2)
+total_result = result1 - result2
+print(f'{hour1}:{minute1}:{second1} - {hour2}:{minute2}:{second2} = {total_result}')
